@@ -1,12 +1,12 @@
 ---
 layout: page
-title: submenus
+title:  hobbies
 nav: true
 dropdown: true
 children: 
-    - title: publications
-      permalink: /publications/
+    - title: Music
+      permalink: /music/
     - title: divider
-    - title: projects
-      permalink: /projects/
+    - title: Art
+      permalink: /art/
 ---
