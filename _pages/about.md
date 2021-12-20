@@ -21,7 +21,7 @@ write about everything I learn in this journey.
 Apart from that I love music <i>(preferebly Indian Classical)</i> and painting. I will drop a few vocal tips and art tricks
 here as well as I go along.
 
-Here is my academic resume - [My Academic Resume]({% link _pages/Manpa_Barman_Academic_CV.pdf %})
+Here is my academic resume - [My Academic Resume]({% link _pages/Resume.pdf %})
 <!-- Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder. -->
 
 <!--Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.-->
