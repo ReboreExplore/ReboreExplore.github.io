@@ -3,6 +3,7 @@ layout: post
 title: Getting Started with Jekyll!
 date: 2021-05-13 21:10 +0530
 description: How this blog page started
+categories: tech
 ---
 
 Writing regularly is a great practise and being able to organize the work in a static website is like a cherry on the top.

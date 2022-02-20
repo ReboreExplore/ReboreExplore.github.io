@@ -2,6 +2,7 @@
 layout: post
 title: Getting Started with Arduino Uno- a setup guide for linux users 
 date: 2021-07-07 21:10 +0530
+categories: tech
 ---
 
 <img class ="blog-inline-image" src="{{ site.baseurl }}/assets/images/getting-started-with-arduino-uno/image1.jpeg" alt="image1" width='700'/>

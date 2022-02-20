@@ -2,6 +2,7 @@
 layout: post
 title: The transition phase of my life 
 date: 2021-07-07 21:10 +0530
+categories: experiences
 ---
 
 *It's about my life so far.*

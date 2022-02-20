@@ -2,6 +2,7 @@
 layout: post
 title: All you need to know about the Arduino Hardware👩🏻‍💻
 date: 2021-07-07 21:10 +0530
+categories: tech
 ---
 
 Arduino Series Part 2

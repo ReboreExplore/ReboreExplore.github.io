@@ -2,6 +2,7 @@
 layout: post
 title: Review-Chemistry by Weike Wang 🧪
 date: 2021-06-20 21:10 +0530
+categories: bookreviews
 ---
 
 Weike Wang’s debut novel *“Chemistry”* is a short and sensitive novel with a dynamic personal narrative. The protagonist of this novel is an unnamed girl who is struggling to get her PhD in chemistry finished soon. Her spontaneous breakdowns are portrayed vividly in the initial parts of the prose.

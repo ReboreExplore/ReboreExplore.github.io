@@ -2,6 +2,7 @@
 layout: post
 title: Understanding your money personality 💰
 date: 2021-06-20 21:10 +0530
+categories: lifestyle
 ---
 
 ***Managing Personal Finances- Part 2***

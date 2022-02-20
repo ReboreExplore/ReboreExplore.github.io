@@ -2,6 +2,7 @@
 layout: post
 title: Flower of Life - The Math of Nature💡
 date: 2021-11-02 21:10 +0530
+categories: tech
 ---
 
 **Flower of Life - The Math of Nature**

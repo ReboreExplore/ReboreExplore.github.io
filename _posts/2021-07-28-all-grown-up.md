@@ -2,6 +2,7 @@
 layout: post
 title: Book Summary- All Grown Up by Jami Attenburg 
 date: 2021-07-07 21:10 +0530
+categories: bookreviews
 ---
 
 

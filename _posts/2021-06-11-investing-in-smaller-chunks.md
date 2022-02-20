@@ -2,6 +2,7 @@
 layout: post
 title: Investing in small chunks💡
 date: 2021-06-11 21:10 +0530
+categories: lifestyle
 ---
 
 ***Managing Personal Finances- Part 1***

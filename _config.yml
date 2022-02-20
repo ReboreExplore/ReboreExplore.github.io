@@ -81,6 +81,11 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 blog_name: my-blogs  # your blog must have a name for it to show up in the nav bar
 blog_description: Space for my blogs on electronics, deep learning, embedded systems, economics, money management, book reviews etc.
 permalink: /blog/:year/:title/
+blog_category: 
+  - lifestyle
+  - experiences
+  - tech
+  - bookreviews
 
 # Pagination
 pagination:

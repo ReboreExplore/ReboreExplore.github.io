@@ -2,6 +2,7 @@
 layout: post
 title: The Chaos Game
 date: 2022-01-16 21:10 +0530
+categories: tech
 ---
 
 Math is beautiful! It comes with a myriad patterns resembling nature. Some are quite obvious, while most of them are quite fascinating.
