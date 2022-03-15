@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Quick Chicken Popcorn 🍗
-date: 2022-02-28 12:10 +0530
-categories: foodrecipies
+date: 2021-09-10 12:10 +0530
+categories: foodrecipes
 ---
 
 

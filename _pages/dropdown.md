@@ -7,6 +7,6 @@ children:
     - title: Music
       permalink: /music/
     - title: divider
-    - title: Art
+    - title: Capture the Moment
       permalink: /art/
 ---

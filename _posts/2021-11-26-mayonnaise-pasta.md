@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Mayonnaise Pasta  🫕
-date: 2022-02-28 12:10 +0530
-categories: foodrecipies
+date: 2021-11-26 12:10 +0530
+categories: foodrecipes
 ---
 **Ingredients** : Pasta, sunflower or refined oil, onions, any preferred vegetable (chilli, capsicum, carrot etc), mayonnaise, oregano, chilli flakes
 
