@@ -20,14 +20,14 @@ Digital pins at the top are responsible for taking both input and producing outp
 
 <img class ="blog-inline-image" src="{{ site.baseurl }}/assets/images/arduino-hardware/image1.png" alt="image1" width='700'/>
 
-The key component of the Arduino board are the two microcontroller chips although only one is important or will be most used by the users. They are **ATmega328** and **ATmega16U2**. ATmega328 is the one we program as users and ATmega16U2 is the one used for USB communication. The latter uses some USB protocol to communicate with the USB port and in turn, helps the ATmega328 to understand the to and fro USB data. As users we can only access ATmega328 and play with it. ATmega16U2 is pre-programmed and thus can’t be coded or changes directly.
+The key component of the Arduino board are the two microcontroller chips although only one is important or will be most used by the users. They are **ATmega328** and **ATmega16U2**. ATmega328 is the one we program as users and ATmega16U2 is the one used for USB communication. The latter uses some USB protocol to communicate with the USB port and in turn, helps the ATmega328 to understand the to and fro USB data. As users we can only access ATmega328 and play with it. ATmega16U2 is pre-programmed and thus can’t be coded or changed directly.
 
 Any microcontroller will have an **application code** which we program in the IDE and make things work and the **Firmware** which we can think of as some low level code which supports the main function like setting power modes, talking to the USB etc and mostly always pre-programmed.
 
-**Bootloader** — It is a firmware on the microcontroller which allows the program to be copied to Flash Memory and EEPROM of the ATmega328 and rewrite codes to it. The bootloader is pre burned in the Arduino. However a bootloader can’t reprogram itself i.e we can update the bootloader using the normal USB interface so a special programming method is required to program the firmware using the In-Circuit Serial Programming interface. The bootloader can be programmed or updated through this **ICSP pins.** There are two ICSP headers for the two processors in the Arduino board.
+**Bootloader** — It is a firmware on the microcontroller which allows the program to be copied to Flash Memory and EEPROM of the ATmega328 and rewrite codes to it. The bootloader is pre burned in the Arduino. However a bootloader can’t reprogram itself i.e we can'tmimicked update the bootloader using the normal USB interface so a special programming method is required to program the firmware using the In-Circuit Serial Programming interface. The bootloader can be programmed or updated through this **ICSP pins.** There are two ICSP headers for the two processors in the Arduino board.
 
 Let’s talk briefly about the schematics of the Arduino:
-You can check the official arduino schematics [here](https://www.arduino.cc/en/uploads/Main/arduino-uno-schematic.pdf). We can see the wirings and connections in the schematic drawings which are exactly mimiced in the physical board. However, the layout and the scale is not exactly as in the board.
+You can check the official arduino schematics [here](https://www.arduino.cc/en/uploads/Main/arduino-uno-schematic.pdf). We can see the wirings and connections in the schematic drawings which are exactly mimicked in the physical board. However, the layout and the scale is not exactly as in the board.
 
 <img class ="blog-inline-image" src="{{ site.baseurl }}/assets/images/arduino-hardware/image1.png" alt="image3" width='700'/>
 

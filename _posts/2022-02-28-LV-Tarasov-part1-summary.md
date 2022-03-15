@@ -7,14 +7,14 @@ categories: bookreviews
 
 ## L.V Tarasov- Calculus Summary - Part 1
 
-Calculus has never been so easy and interpretable before this wonderful text of ***Calculus- Basic Concepts for High School*** by *L.V Tarasov*. I am documenting the summary of each Dialogue(Lesson) to keep it handy for any future revisions. Also, it will be helpful for people who wants to have a quick understanding of this topics nevertheless I would always recommend reading the text for the first time over the summary if time is not a constraint.
+Calculus has never been so easy and interpretable before this wonderful text of ***Calculus- Basic Concepts for High School*** by *L.V Tarasov*. I am documenting the summary of each Dialogue(Lesson) to keep it handy for any future revisions. Also, it will be helpful for people who wants to have a quick understanding of these topics nevertheless I would always recommend reading the text for the first time over the summary if time is not a constraint.
 
 I will be covering **three** dialogues in a blog and continue the series.
 
 
 **Dialogue 1 - Infinite Numerical Sequence**
 
-Any infinite sequence have infinite number of terms. Like 1, 2, 4, 8, 16, 32, 64, 128, ... or 2, 0, −2, −4, −6, −8, −10, −12, .... In the above infinite sequences the terms follow a certain law. But what about the other infinite sequence which do not follow a mathematical law? Or is there any such sequence which comes under this category?
+Any infinite sequence has an infinite number of terms. Like 1, 2, 4, 8, 16, 32, 64, 128, ... or 2, 0, −2, −4, −6, −8, −10, −12, .... In the above infinite sequences, the terms follow a certain law. But what about the other infinite sequence which does not follow a mathematical law? Or is there any such sequence that comes under this category?
 
 The first definition of an infinite series as stated by the author is 
 

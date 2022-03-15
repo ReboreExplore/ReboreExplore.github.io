@@ -12,7 +12,7 @@ categories: tech
 
 *“Arduino is an open-source electronic prototyping platform enabling users to create interactive electronic objects.”*— Arduino Official Documentation.
 
-I have owned an Arduino UNO for quite a long time but never really created a worthy project out of it. However, as I reached the realization phase now, I decided to unbox all the electronics and microcontrollers I bought in my college days out of some fancy interest and just help myself and others. Thus, this journey cum documentation.
+I have owned an Arduino UNO for quite a long time but never really  documented things that have led to me forgetting a lot of it. However, as I reached the realization phase now, I decided to unbox all the electronics and microcontrollers I bought in my college days out of some fancy interest and just help myself and others. Thus, this journey cum documentation.
 
 *Arduino is an open-source hardware and software company that manufactures a wide range of microcontroller boards to assist you in your electronics projects. It consists of a programmable circuit board (or microcontroller) and an IDE (integrated development environment) that runs on our PC so that we can interact with the Arduino and vice versa.*
 
@@ -59,7 +59,7 @@ Write the following code snippets in the editor area.
     void loop() 
     {#Here we write the loop code}
 
-This is the most simple code where we set up a communication between the Arduino and the PC. Any Arduino program consists of two functions the setup function (void setup())which runs only one at the beginning of the execution and the loop function (void loop())which runs interactively.
+This is the most simple code where we set up a communication between the Arduino and the PC. Any Arduino program consists of two functions the setup function (void setup())which runs only once at the beginning of the execution and the loop function (void loop())which runs interactively.
 
 An Arduino code is referred to as Sketches.
 
