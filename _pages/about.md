@@ -15,8 +15,7 @@ social: true  # includes social icons at the bottom of the page
 
 Hi, This is Manpa 👩. I am glad you are here! 
 
-I am trying to set my foot in the field of deep learning with embedded development for the heathcare sector and aim to
-write about everything I learn in this journey.
+I am trying to set my foot in the field of deep learning with embedded development for the heathcare sector and aim to write about everything I learn in this journey.
 
 Apart from that I love music <i>(preferebly Indian Classical)</i> and painting. I will drop a few vocal tips and art tricks
 here as well as I go along.
