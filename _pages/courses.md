@@ -5,7 +5,7 @@ title: Courses
 description: Curated List of the relevant courses taken so far.
 nav: false
 ---
-Here is list of courses from my undergraduate studies. Few courses listed are also part of the MOOC's from verfied sources.
+Here is list of courses from my academic studies. Few courses listed are also part of the MOOC's from verfied sources.
 
 #### Mathematics Courses
 - Linear Algebra

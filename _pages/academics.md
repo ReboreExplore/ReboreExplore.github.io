@@ -2,9 +2,11 @@
 layout: page
 permalink: /academics/
 title: academics
-description: Curriculars and Extra Curriculars in academics
 nav: true
 ---
+*Last Updated on 21/05/2022.*
+
+This page is dedicated to my academic qualifications till date, including the courses taken formally as well as via MOOC's throughout my academic career.
 
 <!-- For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
 
