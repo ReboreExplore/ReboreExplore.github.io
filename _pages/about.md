@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Research Intern @ IIT, Guwahati
+description: Grad Student @ University of Stuttgart
 
 profile:
   align: right
@@ -15,7 +15,7 @@ social: true  # includes social icons at the bottom of the page
 
 Hi, This is Manpa 👩. I am glad you are here! 
 
-I am trying to set my foot in the field of deep learning with embedded development for the heathcare sector(?) and aim to write about everything I learn in this journey.
+I am currently a graduate student at the University of Stuttgart, Germany. I am trying to set my foot in the field of deep learning with embedded development for the heathcare sector(?) and aim to write about everything I learn in this journey.
 
 Apart from that I love music <i>(preferebly Indian Classical)</i> and painting. I will drop a few vocal tips and art tricks
 here as well as I go along. I post such leisure time activities in my [instagram](https://www.instagram.com/the_untitled_space/) handle.
