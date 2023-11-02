@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://reboreexplore.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://reboreexplore.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-11-02T15:39:05+00:00</updated><id>https://reboreexplore.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">L.V Tarasov Summary - Part 1</title><link href="https://reboreexplore.github.io/blog/2022/LV-Tarasov-part1-summary/" rel="alternate" type="text/html" title="L.V Tarasov Summary - Part 1" /><published>2022-02-28T06:40:00+00:00</published><updated>2022-02-28T06:40:00+00:00</updated><id>https://reboreexplore.github.io/blog/2022/LV-Tarasov-part1-summary</id><content type="html" xml:base="https://reboreexplore.github.io/blog/2022/LV-Tarasov-part1-summary/"><![CDATA[<h2 id="lv-tarasov--calculus-summary---part-1">L.V Tarasov- Calculus Summary - Part 1</h2>
+
+<p>Calculus has never been so easy and interpretable before this wonderful text of <strong><em>Calculus- Basic Concepts for High School</em></strong> by <em>L.V Tarasov</em>. I am documenting the summary of each Dialogue(Lesson) to keep it handy for any future revisions. Also, it will be helpful for people who wants to have a quick understanding of these topics nevertheless I would always recommend reading the text for the first time over the summary if time is not a constraint.</p>
+
+<p>I will be covering <strong>three</strong> dialogues in a blog and continue the series.</p>
+
+<p><strong>Dialogue 1 - Infinite Numerical Sequence</strong></p>
+
+<p>Any infinite sequence has an infinite number of terms. Like 1, 2, 4, 8, 16, 32, 64, 128, … or 2, 0, −2, −4, −6, −8, −10, −12, …. In the above infinite sequences, the terms follow a certain law. But what about the other infinite sequence which does not follow a mathematical law? Or is there any such sequence that comes under this category?</p>
+
+<p>The first definition of an infinite series as stated by the author is</p>
+
+<blockquote>
+  <p>“ We say that there is an infinite numerical sequence if every natural number (position numbers is unambiguously placed in correspondence with a definite number ( term of the sequence) by a specific rule.”</p>
+
+</blockquote>
+
+<p><img class="blog-inline-image" src="/assets/images/lv-tarasov-part1/image-1.png" alt="image1" width="500" /></p>
+
+<p>Here \(y_n\) is the \(n^{th}\) term of the sequence. For example in the sequences stated above we have</p>
+
+\[y_n = 2^n ;  y_n=4-2n\]
+
+<p>The \(n^{th}\) term here follows a certain mathematical equation. But even if the \(n^{th}\) term of the sequence don’t follow an analytical expression we can still call some series as “Infinite Numerical Series”. For instance</p>
+
+<ol>
+  <li>2, 3, 5, 7, 11, 13, 17, 19, 23,…</li>
+  <li>3, 3.1, 3.14, 3.141, 3.1415, 3.14159,…</li>
+</ol>
+
+<p>Here we have the first as the sequence of prime numbers and second as a sequence composed of decimal approximations, with deficit, for π.</p>
+
+<p>So a infinite numerical sequence can either be by the formula for the \(n^{th}\) term or by the recurrence relation. There is no superior or inferior in such sequences.</p>
+
+<p>If we plot the sequences in a number line then we can see increasing or non-decreasing as well as decreasing or non-increasing sequences which are collectively termed as monotonic. However, we also have sequences which do not follow any monotonic behavior (neither increasing nor decreasing).</p>
+
+<p><img class="blog-inline-image" src="/assets/images/lv-tarasov-part1/image-2.png" alt="image1" width="500" /></p>
+
+<p>Here sequence (5) is monotonic and sequence (9) is not.</p>
+
+<p>There is another categorization i.e. of a bounded sequence.</p>
+
+<p>A sequence \(y_n\) is bounded if there are two numbers A and B labeling the range which encloses all the terms of a sequence A ⩽ \(y_n\) ⩽ B (n = 1, 2, 3, …).</p>
+
+<p>The sequence (9) is not monotonic and seems to be bounded between -1 and 1. However, we can also say it is bounded between -100 and 100.</p>
+
+<p>Similarly we have sequences which are monotonic but bounded. Thus we can’t always say that an increasing series will lead to infinity. A dynamic rate of increase/increments with each term can also make a sequence bounded instead of pulling it towards infinity.</p>
+
+<p>We can have all the combinations of monotonicity and boundedness in the infinite sequences.</p>
+
+<p>The presence of both the monotonicity and boundedness is something not so simple to understand and here’s where limit steps in.</p>
+
+<p><strong>Dialogue 2 - Limit of Sequence</strong></p>
+
+<p>Let’s start with the official rigorous definition by the author</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>“The number a is said to be the limit of sequence ( \(n^{th}\) ) if for any positive number ϵ there is a real number N such that for all n &gt; N the following inequality holds: $$</td>
+      <td>y_n - a</td>
+      <td>&lt;ϵ$$  “</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img class="blog-inline-image" src="/assets/images/lv-tarasov-part1/image-3.png" alt="image1" width="500" /></p>
+
+<p>In Figure 7 (a) , a sequence is plotted in an x-y plane. Now we take any positive number, <strong>ϵ</strong> and layoff on the y-axis an interval of length ϵ, both upward and downward from the same point <strong>a</strong>. Now we draw through the points y = a + ϵ and y = a − ϵ the horizontal straight lines that mark an “allowed” band for our sequence. For this band there if there exists a positive number n = N, after which all \(n^{th}\) terms of infinite tail falls within the allowed band (or mathematically \(|y_n - a|&lt;ϵ\) ) , then a is the limit of the sequence. 
+In Figure 7(c) three situations are drawn up for \(ϵ_1\) ,\(ϵ_2\) and \(ϵ_3\). Correspondingly, three “allowed” bands are plotted on the graph. For a greater clarity, each of these bands has its own starting N.
+We have chosen \(N_1\) = 7, \(N_2\) = 15, and \(N_3\) = 27. After these N all the remaining terms of the sequence( their number is infinite) do stay within the band.</p>
+
+<p>This is the concept of Limits. We can solve the limit sums by a variety of methods(to be discussed later) but we surely get the essence of limits by the broad discussion already done.</p>
+
+<p><strong>Dialogue 3 - Convergent Sequence</strong></p>
+
+<p>This dialogue has a series of theorems which are directly derived from the concept of limits. Derivations can be referred from the book directly.</p>
+
+<ol>
+  <li><strong>If a sequence has a limit, it is bounded.</strong> If the sequence has a limit, there exist two numbers A and B such that A⩽ \(y_n\) ⩽ B for each term of the sequence(both finite and infinite). In conclusion for an infinite set, in the interval from a − ϵ to a + ϵ we have an infinite set of \(y_n\) starting from n = N + 1 so that outside of this interval we shall find only a finite number of terms (not larger than N ).</li>
+  <li><strong>The boundedness of a sequence is a necessary condition for its convergence; however, it is not a sufficient condition.</strong> If a sequence is convergent, it is bounded. If a sequence is unbounded, it is definitely non-convergent,</li>
+  <li><strong>Weierstrass Theorem:</strong> If a sequence is both monotonic and bounded, it is a sufficient (but not necessary) condition for its convergence.</li>
+  <li></li>
+</ol>
+
+<p><img class="blog-inline-image" src="/assets/images/lv-tarasov-part1/image-4.png" alt="image1" width="500" /></p>
+
+<p>Conclusions from the figure:</p>
+
+<ul>
+  <li>Any convergent sequence must be also bounded.</li>
+  <li>Any sequence that is both bounded and monotonic must be convergent as well.</li>
+  <li>
+    <p>A - Sequence that is bounded, monotonic and convergent i.e if a sequence is both bounded and monotonic it is definitely convergent.</p>
+
+    <p>B - Sequence that is bounded and convergent i.e all convergent sequence are bounded</p>
+
+    <p>C - Bounded sequence which is not convergence</p>
+
+    <p>D - Monotonic Sequence which is unbounded and thus not convergent</p>
+
+    <p>E - neither monotonic nor convergent nor bounded.</p>
+  </li>
+  <li>There can be no bounded, monotonic, and non-convergent sequence.</li>
+  <li>it is impossible to have both unboundedness and convergence in one sequence.
+    <ol>
+      <li><strong>Uniqueness of the limit :</strong> A convergent sequence has only one limit.</li>
+      <li>If sequences (\(y_n\)) and ( \(z_n\)) are convergent (we denote their limits by a and b, respectively), a sequence ( \(y_n + z_n\)) is convergent too, its limit being a + b.</li>
+      <li>If a sequence ( \(y_n + z_n\)) is convergent, two alternatives are possible:</li>
+    </ol>
+  </li>
+  <li>sequences (\(y_n\)) and ( \(z_n\))  are convergent as well, or</li>
+  <li>sequences ( \(y_n\)) and ( \(z_n\))  are divergent.
+    <ol>
+      <li><strong>Infinitesimal sequence:</strong> A convergent sequence with a limit equal to zero.</li>
+      <li>If (\(y_n\)) is a bounded sequence and (\(a_n\)) is infinitesimal, then ( \(y_na_n\)) is infinitesimal as well.</li>
+      <li>A sequence ( \(y_nz_n\)) is convergent to ab if sequences ( \(y_n\)) and ( \(z_n\)) are convergent to a and b, respectively.</li>
+      <li>If (\(y_n\)) and (\(z_n\)) are sequences convergent to a and b when b ̸= 0, then a sequence \(y_nz_n\) is also convergent, its its limit being \(a/b\).</li>
+      <li>Elimination, addition, and any other change of a finite number of terms of a sequence do not affect either its convergence or its limit (if the sequence is convergent).</li>
+      <li>If an initial sequence is convergent, an elimination of an infinite number of its terms (provided that the number of the remaining terms is also infinite) does not affect either
+convergence or the limit of the sequence. If, however, an initial sequence is divergent, an elimination of an infinite number of its terms may, in certain cases, convert the sequence into a convergent one. For example</li>
+    </ol>
+  </li>
+</ul>
+
+\[1, \frac{2}{3},\frac{1}{3}, \frac{1}{4},\frac{1}{5}, \frac{6}{7}, \frac{1}{7}, \frac{8}{9},\frac{1}{9}........\]
+
+<p>Turns into</p>
+
+\[1, \frac{1}{3}, \frac{1}{5},\frac{1}{7},\frac{1}{9},\frac{1}{11}........\]
+
+<p>We can also break one convergent series into two or three convergent series and even spoil a convergence with slight manipulation.</p>]]></content><author><name></name></author><category term="bookreviews" /><summary type="html"><![CDATA[L.V Tarasov- Calculus Summary - Part 1]]></summary></entry><entry><title type="html">Paneer Pakoda 🧆</title><link href="https://reboreexplore.github.io/blog/2022/Paneer-Pakoda/" rel="alternate" type="text/html" title="Paneer Pakoda 🧆" /><published>2022-02-23T02:40:00+00:00</published><updated>2022-02-23T02:40:00+00:00</updated><id>https://reboreexplore.github.io/blog/2022/Paneer%20Pakoda</id><content type="html" xml:base="https://reboreexplore.github.io/blog/2022/Paneer-Pakoda/"><![CDATA[<p><strong>Ingredients</strong> :  Paneer (say around 15 pieces), Refined or Sunflower Oil, Cornflour, Riceflour, Pepper Powder, Chilli Powder, Gramflour(Besan), Onions, Chilli (optional)</p>
+
+<p><strong>Preparation Time</strong> : 20 mins</p>
+
+<ul>
+  <li>Cut the paneer into square pieces.</li>
+  <li>Take cornflour and gramflour(besan) in 2:1 ratio in a bowl. Add salt and chilli powder to the mixture as per taste. Mix it all with a spoon.</li>
+  <li>
+    <p>Make a paste of water and the mixture in the previous step. Don’t make the paste too thick or too thin.The paste should be just so much that it sticks to the paneer well.</p>
+
+    <p><em>Add little by little water at a time so that you donot make the mixture watery at one go. Also if the mixture somehow becomes very thin then you can add some more besan and cornflour to bring back the required consistency or thickness.</em></p>
+  </li>
+  <li>Dip the paneer pieces in the paste and let the paste stick well to surface of the paneer.</li>
+  <li>Take 3 big table spoon of rice flour and one small tablespoon of pepper. Mix and spread it in a plate.</li>
+  <li>Take the paneer out of the paste and coat it with the rice flour and pepper mixture. This mixture will make the paneer pakora crunchier.</li>
+  <li>Take a cooking pot and pour some refined oil in it.</li>
+  <li>
+    <p>After the oil is heated, fry the coated paneer till it gets a golden yellow colour and serve it hot.</p>
+
+    <p><em>You can remove the extra oil from the pakoras by pouring out the pakoras in a kitchen tissue (donot use a newspaper or any paper with some text printed). It will soak the excess oil.</em></p>
+  </li>
+  <li>
+    <p>People who prefer more spicy, can finely chop onions and green chilli over the pakora’s and also add some chat masala to give it a more spicer feel.</p>
+
+    <p><img class="blog-inline-image" src="/assets/images/food/paneer-pakoda.jpg" alt="image1" width="600" /></p>
+  </li>
+</ul>]]></content><author><name></name></author><category term="foodrecipes" /><summary type="html"><![CDATA[Ingredients : Paneer (say around 15 pieces), Refined or Sunflower Oil, Cornflour, Riceflour, Pepper Powder, Chilli Powder, Gramflour(Besan), Onions, Chilli (optional)]]></summary></entry><entry><title type="html">Kolkata (Part 1) - My first flight experience</title><link href="https://reboreexplore.github.io/blog/2022/my-first-flight/" rel="alternate" type="text/html" title="Kolkata (Part 1) - My first flight experience" /><published>2022-02-17T15:40:00+00:00</published><updated>2022-02-17T15:40:00+00:00</updated><id>https://reboreexplore.github.io/blog/2022/my-first-flight</id><content type="html" xml:base="https://reboreexplore.github.io/blog/2022/my-first-flight/"><![CDATA[<p>It’s the 15th of January 2020. <em>Scared?</em> yes, a bit. I have already seen a plethora of flight disaster’s before boarding the first flight in life ✈️.I know it’s stupid but that’s what I saw apart from all the luggage and boarding rules.</p>
+
+<p><strong><em>Note:</em></strong> There is an awesome channel called <a href="https://www.youtube.com/watch?v=0A2wvaRDzbQ&amp;list=PLgAfZdKiJiYEoi4MsA18_PnhoazrwZQUI">Wonder</a>. The Mayday series in this channel are quite nicely articulated documentaries.</p>
+
+<p>Without further digressing, let’s discuss the trip.</p>
+
+<p class="image-caption"><img class="blog-inline-image" src="/assets/images/my-first-flight/image-1.jpg" alt="image2" width="500" /></p>
+<p><em>Our Boarding Passes ✈️</em></p>
+
+<p>I was travelling with two of my friends, and one of them happened to book my flight at 9.30 pm😏. Since it was a last minute booking we didnot have a lot of options to choose from.</p>
+
+<p>Let me introduce my flight mates accompaning me. They are Pritom and Arkadeep - two absolutely nice friends from college. It was Pritom and my first flight experience and Arkadeep was the leader explaining to us the do’s and don’t in an airport and then on the flight. Honestly speaking I was quite nervous to step into the flight and on the other hand Arkadeep was on with all the gross flight stories he had expeiences like his friend vomiting after landing, the unbearable ear pain, the takeoff and landing fear. Apart from this conversation he was quite a nice guide to Pritom and Me.</p>
+
+<p><strong>Pro tip</strong>:</p>
+<ol>
+  <li>Put a fragile sticker in your soft check-in luggage’s. It was Bihu Time so we requested a fragile sticker for all our luggage’s and was given so without questioning.</li>
+  <li>Take some dry fruits in your cabin luggage. You might need it if you face any unexpected delay and you don’t want to spend a 100 bucks for a small cookie.</li>
+</ol>
+
+<p class="image-caption"><img class="blog-inline-image" src="/assets/images/my-first-flight/image-2.jpg" alt="image2" width="500" /></p>
+<p><em>From Left to Right: Arkadeep, Me and Pritom</em></p>
+
+<p>We waited for quite a while in the airport as our flight got delayed till 10.15 pm. We knew we would be really late on reaching Kolkata so we booked two OYO rooms right then and informed the owner about our late arrival.</p>
+
+<p class="image-caption"><img class="blog-inline-image" src="/assets/images/my-first-flight/image-4.jpg" alt="image2" width="500" /></p>
+<p><em>Skyview during takeoff</em></p>
+
+<p>Finally, we reached Kolkata at around 11.45 pm and took an Uber to the Hotel. I was stunned that there are 24 hour uber and swiggy services in Kolkata. Kolkata never sleeps!</p>
+
+<p>We are glad the manager of the hotel took the pain to receive us at 1 am that night and even allowed us to order food and gave us the spare main gate key to receive the order by ourselves. He was a kind man and great hospitality.</p>
+
+<p>This was our 1 am dinner from a nearby Dhaba and trust me it was quite good and affordable. All this meal cost us around 400 rupees for the three of us.</p>
+
+<p class="image-caption"><img class="blog-inline-image" src="/assets/images/my-first-flight/image-5.jpg" alt="image2" width="500" /></p>
+<p><em>Nun, Chicken and some papad 😋</em></p>
+
+<p>Oh! Let me give you a mini room tour of my room before I end this blog. The other room booked was quite the same.</p>
+
+<p class="image-caption"><img class="blog-inline-image" src="/assets/images/my-first-flight/image-3.jpg" alt="image2" width="500" /></p>
+<p><em>Only a pillow tour it seems 😋</em></p>
+
+<p>And all this in a room just cost be around 400 again for a day. Isn’t it awesome?</p>
+
+<p>Back at my place in Assam, we hardly get things so affordable in terms of living and transport however in bigger cities, we do get a wide range of options both financially and quality-wise.</p>
+
+<p>We had an important interview the next day so at 2 am finally we called it a day and the flight adventure of nearly 6 hours came to an end.</p>]]></content><author><name></name></author><category term="experiences" /><summary type="html"><![CDATA[It’s the 15th of January 2020. Scared? yes, a bit. I have already seen a plethora of flight disaster’s before boarding the first flight in life ✈️.I know it’s stupid but that’s what I saw apart from all the luggage and boarding rules.]]></summary></entry><entry><title type="html">The Chaos Game</title><link href="https://reboreexplore.github.io/blog/2022/the-chaos-game/" rel="alternate" type="text/html" title="The Chaos Game" /><published>2022-01-16T15:40:00+00:00</published><updated>2022-01-16T15:40:00+00:00</updated><id>https://reboreexplore.github.io/blog/2022/the-chaos-game</id><content type="html" xml:base="https://reboreexplore.github.io/blog/2022/the-chaos-game/"><![CDATA[<p>Math is beautiful! It comes with a myriad patterns resembling nature. Some are quite obvious, while most of them are quite fascinating.</p>
+
+<p><em>“Mathematics is the Science of Patterns and nature exploits just about every pattern that there is.”</em>
+-<em>Ian Stewert</em></p>
+
+<blockquote>
+  <p>I have been watching Numberphile from the last 3 years and everytime its something new and interesting from the wonderful community, However, except a few I hardly remember the concepts after days. Information overflow is real!</p>
+</blockquote>
+
+<blockquote>
+  <p>Hence I decided to write small scripts to validate the concepts taught in the videos and retrieve the information through this blog whenever I feel like. Thus this effort!</p>
+</blockquote>
+
+<p>The Chaos Game is based on just interatively finding the mid-point concepts. I am following the Numberphile video by Brady word by word. You can watch Brady’s video <a href="https://www.youtube.com/watch?v=kbKtFN71Lfs">here</a>. So, Let’s go step by step :</p>
+
+<p><strong>Step 1</strong>: Randomly plot three points on a canvas. [<em>Make it truely random - Math doesn’t care</em>]. Say he points are A, B and C.</p>
+
+<p><strong>Step 2</strong>: Mark a fourth point. Again let it be another random one. Let’s say this point is “X”.</p>
+
+<p><strong>Step 3</strong>: Roll a six-faced-dice.
+<em>We have to make some rules here.</em></p>
+
+<ul>
+  <li>If the rolled dice shows 1 or 2. The next X will be the mid point between A and previous X.</li>
+  <li>If the rolled dice shows 3 or 4. The next X will be the mid point between B and previous X.</li>
+  <li>If the rolled dice shows 5 or 6. The next X will be the mid point between C and previous X.</li>
+</ul>
+
+<p><img class="blog-inline-image" src="/assets/images/chaos-game/image2.png" alt="image2" width="500" /></p>
+
+<p><strong>Step 4</strong>: Repeat the steps a lot (?) of times (<em>may be 1000 or more</em>).</p>
+
+<p><strong>Step 5</strong>: Voila! You got the nice and preety pattern. Math did it.</p>
+
+<p><img class="blog-inline-image" src="/assets/images/chaos-game/chaos.gif" alt="chaos-game" width="500" /></p>
+
+<p>I have written the script using p5js. The code can be found <a href="https://github.com/ReboreExplore/Math-and-Patterns/tree/master/Chaos%20Game">here</a>. Try it out yourself!</p>]]></content><author><name></name></author><category term="tech" /><summary type="html"><![CDATA[Math is beautiful! It comes with a myriad patterns resembling nature. Some are quite obvious, while most of them are quite fascinating.]]></summary></entry><entry><title type="html">Vegetable Noodles 🍜</title><link href="https://reboreexplore.github.io/blog/2022/Noodles/" rel="alternate" type="text/html" title="Vegetable Noodles 🍜" /><published>2022-01-16T06:40:00+00:00</published><updated>2022-01-16T06:40:00+00:00</updated><id>https://reboreexplore.github.io/blog/2022/Noodles</id><content type="html" xml:base="https://reboreexplore.github.io/blog/2022/Noodles/"><![CDATA[<p><strong>Ingredients</strong> :  Noodles, salt, refined or sunflower oil, vegetables as per choice (carrots, chilli, cabbage can be used), onions, ginger-garlic paste or finely chopped ginger and garlic, tomato ketchup, chilli sauce, soy sauce, vineger.</p>
+
+<p><strong>Preparation Time</strong> : 30 mins</p>
+
+<ul>
+  <li>Take a large packet of noodles and boil it in water. Add a pinch of salt to the boiling water.</li>
+  <li>After the noodles is 80% boiled. Pour the hot water out from the boiling pan into the sink.</li>
+  <li>Then take some cold water and wash the noodles again.</li>
+  <li>Take two teaspoonful of oil and mix it with the noodles.</li>
+</ul>
+
+<p><em>Now we can either prepare a noodle dish now or store in the the fridge to prepare later. We can store it for a week which will then save the boiling time later when w want to cook some.</em></p>
+
+<p>If we want to cook it now, here’s how we do it:</p>
+
+<ul>
+  <li>Cut some onions, carrots and chilly(We can choose vegetables according to our preference). The veggies which compliment with noodles are beans, carrots, pepper, corn, spring onions, cabbage etc</li>
+  <li>Prepare some ginger garlic paste or we can also very finely chop them, whichever works better.</li>
+  <li>Put some refined oil in a frying pan and let it get hot.</li>
+  <li>When the pan gets hot put the chilli , ginger and garlic first. After a few second put the onions into the pan and saute till the mixture gets slightly golden.</li>
+  <li>Pour the other vegetables and cook it until the vegetables are soft.</li>
+  <li>Add 2 teaspoon of tomato ketchup, 1 teaspoonful of chilli sauce, soy sauce and vinegar each. Mix the contents of the frying pan.</li>
+  <li>Add the boiled noodles and mix it well with preferably two large forks. This will not let the noodles overcook and thus not get sticky.</li>
+  <li>After the sauce is all over the noodles cover it with e lid of the pan for 30 seconds.</li>
+  <li>Serve hot.</li>
+</ul>]]></content><author><name></name></author><category term="foodrecipes" /><summary type="html"><![CDATA[Ingredients : Noodles, salt, refined or sunflower oil, vegetables as per choice (carrots, chilli, cabbage can be used), onions, ginger-garlic paste or finely chopped ginger and garlic, tomato ketchup, chilli sauce, soy sauce, vineger.]]></summary></entry><entry><title type="html">Mayonnaise Pasta 🫕</title><link href="https://reboreexplore.github.io/blog/2021/mayonnaise-pasta/" rel="alternate" type="text/html" title="Mayonnaise Pasta 🫕" /><published>2021-11-26T06:40:00+00:00</published><updated>2021-11-26T06:40:00+00:00</updated><id>https://reboreexplore.github.io/blog/2021/mayonnaise-pasta</id><content type="html" xml:base="https://reboreexplore.github.io/blog/2021/mayonnaise-pasta/"><![CDATA[<p><strong>Ingredients</strong> : Pasta, sunflower or refined oil, onions, any preferred vegetable (chilli, capsicum, carrot etc), mayonnaise, oregano, chilli flakes</p>
+
+<p><strong>Preparation Time</strong> : 15-20 mins</p>
+
+<ul>
+  <li>Boil the penne pasta. Put few drops of oil in the boiling water to avoid sticky pasta.</li>
+  <li>Take a frying “kadhai” or pan ( non stick preferred) and pour some refined oil.</li>
+  <li>Cut some onions, chilly, capsicum, carrot, broccoli, corn. Choose vegetable according to convenience.</li>
+  <li>Put the veggies into the frying pan.</li>
+  <li>After cooking a bit, put 2-3 big table spoon of mayonnaise or more according to the amount.</li>
+  <li>Pour some warm water and saute till the saucy texture visible.</li>
+  <li>Add 1 tsp oregano and 1 tsp red chilly flakes to the sauce. Saute to mix.</li>
+  <li>Add the boiled pasta to the  sauce and saute till the sauce sticks to the pasta.</li>
+  <li>
+    <p>Serve it hot.</p>
+
+    <p><img class="blog-inline-image" src="/assets/images/food/mayonnaise-pasta.jpeg" alt="image1" width="600" /></p>
+  </li>
+</ul>]]></content><author><name></name></author><category term="foodrecipes" /><summary type="html"><![CDATA[Ingredients : Pasta, sunflower or refined oil, onions, any preferred vegetable (chilli, capsicum, carrot etc), mayonnaise, oregano, chilli flakes]]></summary></entry><entry><title type="html">Flower of Life - The Math of Nature💡</title><link href="https://reboreexplore.github.io/blog/2021/flower-of-life/" rel="alternate" type="text/html" title="Flower of Life - The Math of Nature💡" /><published>2021-11-02T15:40:00+00:00</published><updated>2021-11-02T15:40:00+00:00</updated><id>https://reboreexplore.github.io/blog/2021/flower-of-life</id><content type="html" xml:base="https://reboreexplore.github.io/blog/2021/flower-of-life/"><![CDATA[<p><strong>Flower of Life - The Math of Nature</strong></p>
+
+<p>A week ago I was going through Devi Parikh’s Instagram handle ( <em>I am a big fan of her through</em> ). She regularly posts generative art and other creative stuffs as part of her hobby. Simlutaneously, I was also going through a python library called <em>turtle</em> which is a graphical library to create mostly recurssive design. So I decided to take a math problem or some thing really interesting to learn and replicate and that’s when I found the “Sacred Geometry- The flower of life”.</p>
+
+<p>In simple words it is simply a mathematical drawing with overlapping circles, and nineteen in number, not more not less. I took the challenge to replicate the design in python turtle and also side by side learn the beauty of the concept and the math behind.</p>
+
+<p>Here’s what I found:</p>
+
+<p>The flower of life depicts the life’s journey where we are formed out of singularity and then bloom all throughout. It all starts with one circle and eventually as life proceeds other circles grow around. It consists of an overlapping of 19 circles of the same radius. IT follows the Sacred Geometry which believes that all life is part of a divine, geometric plan. All structures known to us are following this plan.</p>
+
+<p>This construction resembles a fruit tree growing from a seed from a tree. A fruit falls from a tree which has seeds in it  which then grows into a sapling. It then bears flower buds and then turns into a fruit which carries the seed within. This fruit after ripening falls into the ground and another tree emerges from the seed.</p>
+
+<p>Symbols that resemble the Flower of Life can be found in temples, churches, secular buildings, burial sites, art objects and manuscripts worldwide. Many cultures used this symbol in full knowledge of its power and potency.</p>
+
+<p>Some examples where we can see the flower of life structure quite strangely in different parts of the worls are, in a temple in Abydos (Egypt), Rama temple of Vijayanagara (India), Forbidden City (China), Altenkirchen, the Apis-Altar in Dresden which belonged to Augustus II the Strong (Germany), Gotland (Denmark), on the ceiling of a church in Maria Luschari (Italy), ruins of Pompeji (Italy), an orthodox monastery in Kreta (Greece), church in Sörg (Austria), on a platte of the silver treasure of Augustus etc.</p>
+
+<p>Replication:</p>
+
+<p>I have used python turtle to replicate the construction of the Sacred-Flower of Life geometry:</p>
+
+<p><img class="blog-inline-image" src="/assets/images/flower-of-life/image1.png" alt="image1" width="500" /></p>]]></content><author><name></name></author><category term="tech" /><summary type="html"><![CDATA[Flower of Life - The Math of Nature]]></summary></entry><entry><title type="html">Quick Chicken Popcorn 🍗</title><link href="https://reboreexplore.github.io/blog/2021/quick-chicken-popcorn/" rel="alternate" type="text/html" title="Quick Chicken Popcorn 🍗" /><published>2021-09-10T06:40:00+00:00</published><updated>2021-09-10T06:40:00+00:00</updated><id>https://reboreexplore.github.io/blog/2021/quick-chicken-popcorn</id><content type="html" xml:base="https://reboreexplore.github.io/blog/2021/quick-chicken-popcorn/"><![CDATA[<p><strong>Ingredients</strong> : Small pieces of boneless chicken, salt, turmeric, chilly poweder, pepper, corn flour, gram flour(besan), tomato ketchup, refined or sunflower oil, coriander leaves and onion (optional).</p>
+
+<p><strong>Preparation Time</strong> : 15 mins</p>
+
+<ul>
+  <li>Cut the chicken into very small pieces and wash it thoroughly.</li>
+  <li>Add some salt, turmeric, chilly powder, pepper and mix them with the cut out chicken pieces.</li>
+  <li>Mix well and store in tn the fridge for 3-4 hours.</li>
+  <li>Put the chicken masala mix out of the fridge and put some cornflour and “besan” in 2:1 proportion. Add one small teaspoonful of tomato ketchup and mix everything.</li>
+  <li>The chicken pieces should have a layer a cornflour and besan coating after the mix.</li>
+  <li>Take a frying pan and pour in some refined oil.</li>
+  <li>After the pan is hot put the chicken pieces one after the other till it gets a golden brown color.</li>
+  <li>Put the chicken out of the pan in a kitchen tissue paper so that the excess oil gets soaked.</li>
+  <li>Serve it hot with Mayonnaise and Ketchup.</li>
+  <li>
+    <p>Coriander leaves and finely chopped onions can be used as a supplement to the dish.( Indians specially love this part with any snack.)</p>
+
+    <p><img class="blog-inline-image" src="/assets/images/food/chicken-popcorn.jpeg" alt="image1" width="600" /></p>
+  </li>
+</ul>]]></content><author><name></name></author><category term="foodrecipes" /><summary type="html"><![CDATA[Ingredients : Small pieces of boneless chicken, salt, turmeric, chilly poweder, pepper, corn flour, gram flour(besan), tomato ketchup, refined or sunflower oil, coriander leaves and onion (optional).]]></summary></entry><entry><title type="html">The transition phase of my life</title><link href="https://reboreexplore.github.io/blog/2021/transition-phase-of-my-life/" rel="alternate" type="text/html" title="The transition phase of my life" /><published>2021-07-07T15:40:00+00:00</published><updated>2021-07-07T15:40:00+00:00</updated><id>https://reboreexplore.github.io/blog/2021/transition-phase-of-my-life</id><content type="html" xml:base="https://reboreexplore.github.io/blog/2021/transition-phase-of-my-life/"><![CDATA[<p><em>It’s about my life so far.</em></p>
+
+<p>I graduated in 2020 from Assam, India and felt quite empty inside out even though I had decent academic scores to be happy enough. But that was not the scene. I even felt demotivated to sit in the campus placements. I dreamt beyond this. No, it’s nothing about <em>The Great American Dream</em> or a <em>A Fancy Government Job</em>. I dreamt to be someone who can speak confidently about the work I do or the degree I did.</p>
+
+<p>Yes! I missed a lot of college life. I had good academic score, recieved a few scholarships, took part in a lot of cultural activities, was liked by <em>most</em> of the colleages and faculties, yet graduation felt incomplete. No, I absolutely don’t blame anyone. But isn’t it weird that a four year undergraduation degree with a topper grade left me with such emptiness?</p>
+
+<p>Anyways, I am blessed with a very self aware and competitive friend. He too like me had a similar reputation in college however claims to feel the same. I am glad I found someone who feels the same as me (<em>He was my competitor in college as well</em>).. Okay let’s come to the point!</p>
+
+<p>After graduation, I, with my friend secured an internship in a prestigious college of our town.We were assigned a deep learning based project and that’s when my world seemed to turn upside down. I was not getting any clue as how to proceed with that. My resume mentioned I knew python but why am I not able to understand most of the github repos? I was silent. Did I miss on projects? Yes, I did. My friend at the same time stayed calm and handed me the book “Learn Python-The Hard Way by Zed Shaw” to study. Yes, I had to give a fresh start. I studied the book and sometimes he also joined me during my study hours. By January,2021 I gained some confidence but the “<em>Dunning-Kruger Curve</em>” theory bought me back to my senses and reminded me that its just the beginning. I realized the importance of actual skills (<em>not a flowery resume</em>) and the importance of a motivated peer group.</p>
+
+<p><em>I got a very nice friend circle in my college but somewhere each one of us were equally unaware of the world and our standing.</em></p>
+
+<p>Fortunately, around the same time I met a very nice and knowledgeble senior who along with my friend were the best peers I could find at this point. The discussions very mostly about the recent trends and research domains. We aimed big. I could not take part in most of the conversations due to my very limited knowledge on the computer science and deep learning domain. There were numerous breakdowns during this period. Everytime I could not help or contribute to the work or even sometimes not able to make sense of the entire four to five hour meet left me upset.</p>
+
+<p>Around the same time I also saw my friend using arch linux full time and he was kind enough to describe me how he managed to set up the entire system from scratch. He would conduct meets with me to show his new arch setup and the utilities he built on top of that. I was astonished to see him grow so much. Though he had a higher standing in this domain when we started but it was quite low compared to the standards we were aiming for and seeing him rise was a great deal of motivation in itself.</p>
+
+<p>What next? Ofcourse, out of <em>utter insecurity or may be motivation</em> I finally switched switched to linux (<em>full time</em>). Seems funny right? I too thought it would definetely be a temporary switch. A girl who couldn’t manage her windows very well (<em>by very well I mean fluent with all the utilities and management</em>) and let alone a arch based linux😂.But guess what I am writing this blog in my arcolinux after six months and now I can I say I am a functional linux user (<em>Apologies to my friend if he is reading this as”functional” means a lot to him</em>).</p>
+
+<p>Coming back to my internship, the internship required me to implement a deep learning task from scratch and here I was stuck with python. But my very positive minded friend was determined that we will do it. He often told me “The journey is as important as you destination” and then what I kept going. Both of us did the Andrew Ng Deep learning specialization with utmost honesty (<em>Its still not over</em>) and now feel quite confident to atleast implement the SOTA papers on the topics we covered so far. We studied about GAN’s from our senior who was working on that domain.</p>
+
+<p>I also started blogging to overcome my fear of publishing writeups. (<em>It’s the same reason - I was not quite good at it</em>). I cleared my github mess.(<em>Again being from a non computer science branch I didnot show much interest to even update the profile during my college</em>). I started becoming active on linkedin and observing the connections and their profiles.I learned a lot from their as well. I am working on personal branding which I observed is one of <em>the most important</em> part of this journey. I also understood my standing in this process. Reading and analysing research papers is another skill I am trying to ace this year.</p>
+
+<p>Today after six months of this transistion, things have started falling into places. Ofcourse, I am no way near to perfection but the emptiness I felt is fading out slowly.I want to start my grad studies with a good mood and knowledge. As I expect good and sound peers, I believe the professors I will be working under during my master’s would also except the same. A rosy resume might get me in even today but since I too aspire to be a kind hearted professor in future, my conscience will never allow me to fool the admission committee and my supervisor about my knowledge and skills until and unless I am myself confident about everything I claim for myself.</p>
+
+<p>I believe by the end of this year, I will be the right candidate for the right supervisor in some part of the world and we shall grow together.</p>]]></content><author><name></name></author><category term="experiences" /><summary type="html"><![CDATA[It’s about my life so far.]]></summary></entry><entry><title type="html">Book Summary- All Grown Up by Jami Attenburg</title><link href="https://reboreexplore.github.io/blog/2021/all-grown-up/" rel="alternate" type="text/html" title="Book Summary- All Grown Up by Jami Attenburg" /><published>2021-07-07T15:40:00+00:00</published><updated>2021-07-07T15:40:00+00:00</updated><id>https://reboreexplore.github.io/blog/2021/all-grown-up</id><content type="html" xml:base="https://reboreexplore.github.io/blog/2021/all-grown-up/"><![CDATA[<p>Andrea, the narrator, is an NYC native, mostly unhappy, confused, cranky girl in her late thirties trying to make sense of her life, living a hazy city lifestyle.</p>
+
+<p>Her dysfunctional family lives in the Upper West Side of the City, where her father, a talented jazz musician, dies of a heroin overdose listening to his favourite record. Her brother, David is very close to her, mostly father their father’s demise. David, for a long time, had been a part of three great bands and a musical influencer.</p>
+
+<p>We are silent until the song ends. <strong><em>“I’ve got a whole album’s worth,”</em></strong> he says. <strong><em>I experience a temporary moment of both jealousy and awe at my brother’s musical talent, and his ability to tap in so freely to his creative self. But that’s him, he won the family lottery, he got the best part of our father in him.</em></strong></p>
+
+<p>Her mother has been a political activist for more than thirty years and involved with every possible shade of leftist organization. After the husband’s death, her mother ran out of savings and often had to throw rent-raising dinner parties to make a little extra cash. The audience was not particularly sympathetic rather a bunch of middle-aged gross stoner men which often kept Andrew away from the house. The mother was also very attached to Betsy, the best friend who dies in the later part of the story leaves the mother extremely upset even more than her husband’s demise.</p>
+
+<p>Her brother David and his wife, Greta are two fun-loving characters in the novel who experience a very active and ambitious life until their sick baby, Sigrid was born. They uprooted to the New Hampshire area to take care of their sick child, and rethink their collapsing careers. They are totally broke out of the extreme medical expenses of Sigrid.</p>
+
+<p>The retrospections from her childhood and upbringing often affected Andrea’s romantic and professional experiences as an adult. She wanted to make things all right for her family but her own messy life with endless emotional and mental trauma makes her rethink every decision she makes for her family. Andrea works in an advertising company and struggling to define her own ideas of happiness and security and that it’s okay to stay alone and unmarried.
+Each chapter focuses on a particular instance in her life’s journey which is back and forth from her adolescence to adulthood. This story is about this girl and all her experiences about being <em>“THE GROWN UP”</em></p>
+
+<p><em>“Is this part of being a grown-up? Taking what you can get?”</em></p>]]></content><author><name></name></author><category term="bookreviews" /><summary type="html"><![CDATA[Andrea, the narrator, is an NYC native, mostly unhappy, confused, cranky girl in her late thirties trying to make sense of her life, living a hazy city lifestyle.]]></summary></entry></feed>

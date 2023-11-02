@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Manpa  Barman
+
+
+  | Getting Started with Arduino Uno- a setup guide for linux users
+
+</title>
+<meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩🏻‍💼</text></svg>">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="canonical" href="https://reboreexplore.github.io/blog/2021/getting-started-with-arduino-uno/">
+
+
+<!-- Dark Mode -->
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/dark_mode.js"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <a class="navbar-brand title font-weight-lighter" href="https://ReboreExplore.github.io/">
+       <span class="font-weight-bold">Manpa</span>   Barman
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/academics/">
+                academics
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                hobbies
+                
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              
+              
+                <a class="dropdown-item" href="/music/">Music</a>
+              
+              
+              
+                <div class="dropdown-divider"></div>
+              
+              
+              
+                <a class="dropdown-item" href="/art/">Capture the Moment</a>
+              
+              
+              </div>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/projects/">
+                projects
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">
+                publications
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            <div class="toggle-container">
+              <a id="light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+              </a>
+            </div>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      
+
+
+
+
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Getting Started with Arduino Uno- a setup guide for linux users</h1>
+    <p class="post-meta">July 7, 2021</p>
+    <p class="post-tags">
+      <a href="/blog/2021"> <i class="fas fa-calendar fa-sm"></i> 2021 </a>
+      
+
+      
+        ·  
+        
+        <a href="/blog/category/tech">
+          <i class="fas fa-tag fa-sm"></i> tech</a>  
+          
+      
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    <p><img class="blog-inline-image" src="/assets/images/getting-started-with-arduino-uno/image1.jpeg" alt="image1" width="700"></p>
+
+<p class="image-caption"><em>Photo by Harrison Broadbent on Unsplash</em></p>
+
+<p><em>“Arduino is an open-source electronic prototyping platform enabling users to create interactive electronic objects.”</em>— Arduino Official Documentation.</p>
+
+<p>I have owned an Arduino UNO for quite a long time but never really  documented things that have led to me forgetting a lot of it. However, as I reached the realization phase now, I decided to unbox all the electronics and microcontrollers I bought in my college days out of some fancy interest and just help myself and others. Thus, this journey cum documentation.</p>
+
+<p><em>Arduino is an open-source hardware and software company that manufactures a wide range of microcontroller boards to assist you in your electronics projects. It consists of a programmable circuit board (or microcontroller) and an IDE (integrated development environment) that runs on our PC so that we can interact with the Arduino and vice versa.</em></p>
+
+<p>Arduino boards come with many choices like NANO, MEGA, UNO, etc., but Arduino UNO seems to be the most popular one for beginners.</p>
+
+<p>Few important points before we start:</p>
+
+<ol>
+  <li>You can buy the Arduino UNO board <a href="https://www.amazon.in/permanent-guarantee-Arduino-Uno/dp/B0044X2E5S/ref=sr_1_1_sspa?dchild=1&amp;keywords=arduino+uno&amp;qid=1627564416&amp;sr=8-1-spons&amp;psc=1&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzTjAwOTRTRjQwWTBLJmVuY3J5cHRlZElkPUEwMTQyNzIwMjkxMkZZU0xCNEVLViZlbmNyeXB0ZWRBZElkPUEwMzQ1OTU3MkRNWTJRTzhRSzQxOCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" target="_blank" rel="noopener noreferrer">here</a>. This is the original board which is more on the costlier side. However, you can also use an Arduino <a href="https://www.amazon.in/ARDUINO-Development-Microcrontroller-Version-Atmega328P/dp/B07H1VZGBX/ref=sr_1_4?dchild=1&amp;keywords=arduino+uno&amp;qid=1627564416&amp;sr=8-4" target="_blank" rel="noopener noreferrer">clone</a> which will cost you less than half of the original and also quite well. I am myself using one of them.</li>
+  <li>If you want more than to stare at the built-in Arduino LED blinking and be happy, you can buy a few components to get started.</li>
+  <li>You can buy — resistors, breadboards, a 5V battery, a few coloured LED’s, jumper wires of all configurations, etc. <a href="https://www.amazon.in/Generic-Electronic-Components-Breadboard-Capacitor/dp/B00N23YNA0/ref=sr_1_1?dchild=1&amp;keywords=electronics+components+set&amp;qid=1627565744&amp;sr=8-1" target="_blank" rel="noopener noreferrer">Components sets</a> like this and <a href="https://www.amazon.in/Jumper-Wires-Male-female-Pieces/dp/B00ZYFX6A2/ref=sr_1_3?dchild=1&amp;keywords=jumper+wires&amp;qid=1627565870&amp;sr=8-3" target="_blank" rel="noopener noreferrer">jumper wires</a> can serve your purpose as a beginner.</li>
+  <li>Another important tool that I think must be present with any electronics enthusiast is a <a href="https://www.amazon.in/ULTIUM-830L-Digital-Multimeter-Measurement/dp/B097Y2NZKR/ref=sr_1_8?dchild=1&amp;keywords=multimeter&amp;qid=1627566003&amp;sr=8-8" target="_blank" rel="noopener noreferrer">digital multimeter</a>. This will be your most trustworthy friend on this journey.</li>
+</ol>
+
+<p>Arduino runs on cross-platform operating systems viz., Windows, Linux and Macs.</p>
+
+<p>Installation Guides can be found here: <a href="https://www.arduino.cc/en/Guide/Windows" target="_blank" rel="noopener noreferrer">Windows</a> and <a href="https://www.arduino.cc/en/Guide/macOS" target="_blank" rel="noopener noreferrer">Mac</a> OS.
+I use an arch based Linux Machine. You can do similar steps for other Linux distros with minor changes like Pacman or apt-get commands which are distros dependent.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#Download the arduino IDE
+sudo pacman -S arduino
+</code></pre></div></div>
+
+<p><em>Arduino has also released its CLI (command-line interface) tool in 2018 which we will talk about in a different blog. This can be used as a replacement for the IDE to program the boards from a shell.</em></p>
+
+<p>Launch the Arduino IDE and connect your Arduino to the PC via the USB provided along.</p>
+
+<p>Select Tools -&gt; Board “Arduino Uno”-&gt; Arduino AVR Boards -&gt; Arduino UNO.</p>
+
+<p><em>If you don’t find the Arduino UNO option under Tools-&gt;Boards , then select Board Manager under Tools -&gt; Boards and install Arduino AVR Boards.</em></p>
+
+<p>Select Tools -&gt; Port -&gt; /dev/ttyACM</p>
+
+<p>The following figure shows the Arduino IDE interface with markers.</p>
+
+<p class="image-caption"><img class="blog-inline-image" src="/assets/images/getting-started-with-arduino-uno/image2.png" alt="image1" width="700"></p>
+<p><em>Credits: stemify.weebly.com</em></p>
+
+<p>Write the following code snippets in the editor area.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void setup() {
+// put your setup code here, to run once:
+Serial.begin(9600); //set up serial communication
+Serial.println("Is this board working?");
+}
+void loop() 
+{#Here we write the loop code}
+</code></pre></div></div>
+
+<p>This is the most simple code where we set up a communication between the Arduino and the PC. Any Arduino program consists of two functions the setup function (void setup())which runs only once at the beginning of the execution and the loop function (void loop())which runs interactively.</p>
+
+<p>An Arduino code is referred to as Sketches.</p>
+
+<ol>
+  <li>Setup() Function:</li>
+</ol>
+
+<p>The Serial.begin(9600) sets up or opens the serial communication between the Arduino and the PC. 9600 indicates the “baud rate” of the communication.</p>
+
+<p>The Serial.println(“Is this board working?”) prints the data sent by the board to the PC in the serial monitor.</p>
+
+<p>After writing the code <em>“verify the sketch”</em> and <em>“compile and upload the sketch to Arduino”</em> with the help of the icons in the menu bar.</p>
+
+<p>Linux users might not be able to compile at this point. You might get an error.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>avrdude: ser_open(): can't open device "/dev/ttyACM0": Permission denied
+or
+Error opening serial port '/dev/ttyACM0
+</code></pre></div></div>
+
+<p><em>“0” in ttyACM can be different for all. I am considering you have the port ttyACM0 for this tutorial.</em></p>
+
+<p>Go to the terminal and enter the following commands.
+    $ ls -l /dev/ttyACM0
+    crw-rw—- 1 root uucp 166, 0 Jul 30 23.01 /dev/ttyACM0</p>
+
+<p>The <em>“uucp”</em> after the root in the output should give you the group name. It might be <em>“dialout”</em> as well in some cases.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo usermod -a -G uucp manpa # add user(manpa)to the group(uucp)
+</code></pre></div></div>
+
+<p>Here manpa is the system username and group name can be found out by the previous commands.
+    $ sudo chmod a+rw /dev./ttyACM0 # set read and write permissions.</p>
+
+<p>Try to recompile the sketch in the Arduino IDE and it must be working well.</p>
+
+<p><em>Note: If it still shows some issues related to port selection, make sure you again navigate through Tools-&gt; Port-&gt;/dev/ttyACM0.</em></p>
+
+<p>After compiling to check if the communication is set up and you are getting the required output, go to the “Serial Monitor” by clicking the serial monitor icon in the top right corner of the IDE.</p>
+
+<p>The serial monitor window should pop up and show you the println message from the sketch. This implies the Arduino is sending the correct information to the PC and behaving as intended.</p>
+
+<p><em>Note: The serial monitor will have a baud rates selection menu. Make sure that the baud rate matches the one we wrote in our program. For eg. 9600 bps in this case.</em></p>
+
+<p>Every time the Arduino resets or power on itself the setup() function will run once. So if you get multiple lines of println, it might be due to multiple reset operations by the Arduino.</p>
+
+<p>Now that everything is ready to use, from the next blog we will go on with some step by step tutorials on small projects we can do using the microcontroller.</p>
+
+  </article>
+
+  
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    © Copyright 2023 Manpa  Barman.
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>.
+
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  
+
+
+
+
+
+</html>

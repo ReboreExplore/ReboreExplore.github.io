@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://ReboreExplore.github.io/" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   Manpa  Barman
 
 
-  | Page not found
+  | All you need to know about the Arduino Hardware👩🏻‍💻
 
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩🏻‍💼</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="https://reboreexplore.github.io/404.html">
+<link rel="canonical" href="https://reboreexplore.github.io/blog/2021/arduino-hardware/">
 
 
 <!-- Dark Mode -->
@@ -80,7 +80,7 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="/blog/">
               blog
               
@@ -216,17 +216,73 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      
+
+
+
+
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">All you need to know about the Arduino Hardware👩🏻‍💻</h1>
+    <p class="post-meta">July 7, 2021</p>
+    <p class="post-tags">
+      <a href="/blog/2021"> <i class="fas fa-calendar fa-sm"></i> 2021 </a>
+      
+
+      
+        ·  
+        
+        <a href="/blog/category/tech">
+          <i class="fas fa-tag fa-sm"></i> tech</a>  
+          
+      
+
+    </p>
   </header>
 
-  <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://ReboreExplore.github.io/">here</a>.</p>
+  <article class="post-content">
+    <p>Arduino Series Part 2</p>
+
+<p>Let’s know how the board looks like and all its components.</p>
+
+<p><img class="blog-inline-image" src="/assets/images/arduino-hardware/image1.png" alt="image1" width="700"></p>
+
+<p>The <strong>reset</strong> button just to RESET the Arduino. The <strong>USB Connector</strong> is used to connect the Arduino to the PC. For small projects involving sensors or other basic electronic components this USB Port also serves as the power source. The external <strong>Power Connector</strong> in the form of a barrel jack is only used for high power operations.</p>
+
+<p>Now coming to the <strong>I/O pins</strong> which are present on either side of the board to interact with the external world like taking physical inputs from the environment, sensors or displaying output to some external display etc. (<em>These are simply holes where we fit in maybe, jumper wires</em>).</p>
+
+<p>Digital pins at the top are responsible for taking both input and producing output. These pins take discrete values (<em>say 0V and 5V for this Arduino model</em>) coming to the board via the pins i.e. 0 →0 V and 1 → 5V. For Analog inputs (i.e anything between (0–5)V), we use the 6 pins towards the bottom of the board. These pins can’t drive Analog outputs. Towards the left of the Analog pins, we have the various power pins like 5V, 3.3 V and several grounds which are frequently used to drive the circuits.</p>
+
+<p><img class="blog-inline-image" src="/assets/images/arduino-hardware/image1.png" alt="image1" width="700"></p>
+
+<p>The key component of the Arduino board are the two microcontroller chips although only one is important or will be most used by the users. They are <strong>ATmega328</strong> and <strong>ATmega16U2</strong>. ATmega328 is the one we program as users and ATmega16U2 is the one used for USB communication. The latter uses some USB protocol to communicate with the USB port and in turn, helps the ATmega328 to understand the to and fro USB data. As users we can only access ATmega328 and play with it. ATmega16U2 is pre-programmed and thus can’t be coded or changed directly.</p>
+
+<p>Any microcontroller will have an <strong>application code</strong> which we program in the IDE and make things work and the <strong>Firmware</strong> which we can think of as some low level code which supports the main function like setting power modes, talking to the USB etc and mostly always pre-programmed.</p>
+
+<p><strong>Bootloader</strong> — It is a firmware on the microcontroller which allows the program to be copied to Flash Memory and EEPROM of the ATmega328 and rewrite codes to it. The bootloader is pre burned in the Arduino. However a bootloader can’t reprogram itself i.e we can’tmimicked update the bootloader using the normal USB interface so a special programming method is required to program the firmware using the In-Circuit Serial Programming interface. The bootloader can be programmed or updated through this <strong>ICSP pins.</strong> There are two ICSP headers for the two processors in the Arduino board.</p>
+
+<p>Let’s talk briefly about the schematics of the Arduino:
+You can check the official arduino schematics <a href="https://www.arduino.cc/en/uploads/Main/arduino-uno-schematic.pdf" target="_blank" rel="noopener noreferrer">here</a>. We can see the wirings and connections in the schematic drawings which are exactly mimicked in the physical board. However, the layout and the scale is not exactly as in the board.</p>
+
+<p><img class="blog-inline-image" src="/assets/images/arduino-hardware/image1.png" alt="image3" width="700"></p>
+
+<p class="image-caption"><em>Coursery : Slides from Prof Ian Harris Lectures</em></p>
+
+<p>So, that’s it about the hardware specifications we need to know about the microcontroller before starting to code. In general, when we write a program(<em>say blink LED</em>) in the arduino IDE and upload it to the board, the board resets and the bootloader runs . The bootloader then writes the program to the Flash memory of the ATmega328 to let use for our applications. I will talk about the entire programming workflow of the microcontroller in the next post.</p>
+
+<p>Stay tuned!</p>
+
+<p>References:</p>
+
+<ol>
+  <li>An Introduction to Programming the IOT Specialization by UCI and Coursera</li>
+</ol>
 
   </article>
+
+  
 
 </div>
 

@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://ReboreExplore.github.io/" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   Manpa  Barman
 
 
-  | Page not found
+  | The Chaos Game
 
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩🏻‍💼</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="https://reboreexplore.github.io/404.html">
+<link rel="canonical" href="https://reboreexplore.github.io/blog/2022/the-chaos-game/">
 
 
 <!-- Dark Mode -->
@@ -80,7 +80,7 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="/blog/">
               blog
               
@@ -216,17 +216,74 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      
+
+
+
+
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">The Chaos Game</h1>
+    <p class="post-meta">January 16, 2022</p>
+    <p class="post-tags">
+      <a href="/blog/2022"> <i class="fas fa-calendar fa-sm"></i> 2022 </a>
+      
+
+      
+        ·  
+        
+        <a href="/blog/category/tech">
+          <i class="fas fa-tag fa-sm"></i> tech</a>  
+          
+      
+
+    </p>
   </header>
 
-  <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://ReboreExplore.github.io/">here</a>.</p>
+  <article class="post-content">
+    <p>Math is beautiful! It comes with a myriad patterns resembling nature. Some are quite obvious, while most of them are quite fascinating.</p>
+
+<p><em>“Mathematics is the Science of Patterns and nature exploits just about every pattern that there is.”</em>
+-<em>Ian Stewert</em></p>
+
+<blockquote>
+  <p>I have been watching Numberphile from the last 3 years and everytime its something new and interesting from the wonderful community, However, except a few I hardly remember the concepts after days. Information overflow is real!</p>
+</blockquote>
+
+<blockquote>
+  <p>Hence I decided to write small scripts to validate the concepts taught in the videos and retrieve the information through this blog whenever I feel like. Thus this effort!</p>
+</blockquote>
+
+<p>The Chaos Game is based on just interatively finding the mid-point concepts. I am following the Numberphile video by Brady word by word. You can watch Brady’s video <a href="https://www.youtube.com/watch?v=kbKtFN71Lfs" target="_blank" rel="noopener noreferrer">here</a>. So, Let’s go step by step :</p>
+
+<p><strong>Step 1</strong>: Randomly plot three points on a canvas. [<em>Make it truely random - Math doesn’t care</em>]. Say he points are A, B and C.</p>
+
+<p><strong>Step 2</strong>: Mark a fourth point. Again let it be another random one. Let’s say this point is “X”.</p>
+
+<p><strong>Step 3</strong>: Roll a six-faced-dice.
+<em>We have to make some rules here.</em></p>
+
+<ul>
+  <li>If the rolled dice shows 1 or 2. The next X will be the mid point between A and previous X.</li>
+  <li>If the rolled dice shows 3 or 4. The next X will be the mid point between B and previous X.</li>
+  <li>If the rolled dice shows 5 or 6. The next X will be the mid point between C and previous X.</li>
+</ul>
+
+<p><img class="blog-inline-image" src="/assets/images/chaos-game/image2.png" alt="image2" width="500"></p>
+
+<p><strong>Step 4</strong>: Repeat the steps a lot (?) of times (<em>may be 1000 or more</em>).</p>
+
+<p><strong>Step 5</strong>: Voila! You got the nice and preety pattern. Math did it.</p>
+
+<p><img class="blog-inline-image" src="/assets/images/chaos-game/chaos.gif" alt="chaos-game" width="500"></p>
+
+<p>I have written the script using p5js. The code can be found <a href="https://github.com/ReboreExplore/Math-and-Patterns/tree/master/Chaos%20Game" target="_blank" rel="noopener noreferrer">here</a>. Try it out yourself!</p>
 
   </article>
+
+  
 
 </div>
 

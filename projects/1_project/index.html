@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://ReboreExplore.github.io/" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   Manpa  Barman
 
 
-  | Page not found
+  | JPEG Encoder
 
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩🏻‍💼</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="https://reboreexplore.github.io/404.html">
+<link rel="canonical" href="https://reboreexplore.github.io/projects/1_project/">
 
 
 <!-- Dark Mode -->
@@ -219,12 +219,24 @@
       <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">JPEG Encoder</h1>
+    <p class="post-description">A JPEG Encoder using OpenCL</p>
   </header>
 
   <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://ReboreExplore.github.io/">here</a>.</p>
+    <p>A Joint Photographic Experts Group (JPEG) encoder is a crucial component in digital image processing, designed
+to efficiently compress and encode images in the JPEG standard. This project aims to implement the JPEG encoding process in the
+C++ programming language, comparing how the various stages can be accelerated on a Graphics Processing Unit (GPU). The various stages of the JPEG encoding process, color space conversion, downsampling or chroma subsampling, level shifting, discrete
+cosine transform, quantization, zigzag scan, run length encoding and Huffman encoding are implemented as C++ functions as
+well as Open Computing Language (OpenCL) kernels. Both the CPU and GPU implementations are compared and the speedup
+are evaluated which justifies the parallel processing capabilities of modern GPUs. As per our results, speedups in the range 35-
+200 are recorded for various stages. The results also support the presumption that the stages of the JPEG encoding process are
+highly parallelizable.</p>
+
+<p>The code for this project can be found <a href="https://github.com/ReboreExplore/jpeg-encoder" target="_blank" rel="noopener noreferrer">here</a>.</p>
+
+<p>Read the full report <a href="https://drive.google.com/file/d/1BdacI2S6JgnBgMHemFvCgDaKXZq6Jpre/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.</p>
+
 
   </article>
 
