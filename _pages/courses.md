@@ -23,6 +23,16 @@ Here is list of courses from my academic studies. Few courses listed are also pa
 - Electrical Measurements and Measuring Instruments
 - Power Electronics
 - Signals and Systems
+- Industrial Automation Systems
+
+#### Computer Science Courses
+- Operating Systems
+- Computer Architecture and Organization
+- Aquisition and Analysis of Eye Tracking Data
+- High Performance Computing Lab
+- Deep Learning 
+- Machine Learning  
+
 
 #### Advanced Electrical and Instrumentation Engineering Courses
 - Digital System Design

@@ -4,7 +4,6 @@ permalink: /academics/
 title: academics
 nav: true
 ---
-*Last Updated on 21/05/2022.*
 
 This page is dedicated to my academic qualifications till date, including the courses taken formally as well as via MOOC's throughout my academic career.
 

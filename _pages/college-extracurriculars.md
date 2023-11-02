@@ -5,7 +5,10 @@ title: College Extracurriculars
 nav: false
 ---
 
-
+- **Hochschule Sports, University of Stuttgart**
+(May 2023-Present)
+    - Taking fencing as a sport workout in the university.
+    
 - ***Indian Society of Technical Education (ISTE)***
  (July 2018 – July 2019)
     - Designation: Chairperson of AEC ISTE Student Chapter

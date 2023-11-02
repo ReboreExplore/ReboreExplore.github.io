@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Pygame is an interesting framework
-date: 2021-09-25 16:11:00-0400
+title: Started working in the domain of role playing in LLMs
+date: 2023-10-23 16:11:00-0400
 inline: false
 ---
 
-I was taking to a friend and he showed me some preety interesting minimalistic two player games. Since I am new to opensource contributions, I think I should give some time learning pygame.
-
-***
-
-The two very well explained blogs on pygame are 
-
-	- https://coderslegacy.com/python/pygame-platformer-game-development/
-	- https://coderslegacy.com/python/python-pygame-tutorial/
+In this project, it is intended to explore the impact of integrating
+role-playing within LLMs during simulated conversational interactions. The primary goal
+is to design a chatbot with two LLMs interacting with each other, with one of them assigned
+the role of an attacker and the other as the defender. The attacker LLM will be studied with
+various language models and prompt hacking techniques attempting to extract sensitive
+information from the other chatbot, which acts as the defender. Subsequently, a compre-
+hensive evaluation of the vulnerability of the defender LLM to potential malicious attacks
+and privacy threats will be conducted.
