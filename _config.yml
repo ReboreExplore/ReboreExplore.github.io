@@ -54,6 +54,17 @@ contact_note: >
   The most convenient way to reach me is email. I make sure I reply to almost all of them.
 
 
+# Includes & excludes
+include: ['_pages']
+exclude:
+  - bin
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+keep_files:
+  - CNAME
+  - .nojekyll
+  - .git
 # -----------------------------------------------------------------------------
 # Library versions
 # -----------------------------------------------------------------------------
