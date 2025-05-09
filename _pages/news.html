@@ -1,0 +1,38 @@
+---
+layout: news_posts
+title: News
+permalink: /news/
+---
+
+
+
+<ul class="news-list">
+  {% assign news_items = site.news | sort: "date" | reverse %}
+  {% for item in news_items %}
+    <li class="news-entry">
+      <strong>{{ item.date | date: "%B %d, %Y" }}</strong>: 
+      <a href="{{ item.url }}">{{ item.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+<style>
+  .news-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .news-entry {
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .news-entry a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+
+  .news-entry a:hover {
+    text-decoration: underline;
+  }
+</style>
