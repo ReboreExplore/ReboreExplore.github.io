@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 2em;
+      color: #333;
+    }
+
+    .news-container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5em;
+    }
+
+    .news-content {
+      line-height: 1.8;
+    }
+
+    .news-content h2 {
+      color: #0073e6;
+    }
+
+    .news-content time {
+      font-size: 0.9em;
+      color: #777;
+      margin-bottom: 1em;
+      display: block;
+    }
+
+    .news-content p {
+      margin: 1em 0;
+    }
+    
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 2em;
+      font-size: 1em;
+      color: #0073e6;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="news-container">
+    <h1>{{ page.title }}</h1>
+    <div class="news-content">
+      <time>{{ page.date | date: "%B %d, %Y" }}</time>
+      {{ content }}
+    </div>
+
+    <a href="{{ site.baseurl }}/" class="back-link">Back to News</a>
+  </div>
+</body>
+</html>
