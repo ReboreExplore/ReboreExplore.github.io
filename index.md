@@ -37,3 +37,14 @@ View my my work so far in my Curriculum Vitae - [CV_April2025]({{ site.baseurl }
   </ul>
   <a href="{{ '/news/' | relative_url }}">See more news</a>
 {% endif %}
+
+
+## 🎯 Currently
+
+<div class="now-catchy-box">
+  <ul>
+    <li>🚀 Completed 3/12 books (fiction) as part of my year goal (Will write a quarterly review blog)</li>
+    <li>🎶 Joined Balfolk class as a new way of dealing with stress</li>
+    <li>✍️ Drafting a blog on Image Operations </li>
+  </ul>
+</div>
