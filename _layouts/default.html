@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="{{ site.fontawesome.integrity }}" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.0/css/academicons.min.css" integrity="{{ site.academicons.integrity }}" crossorigin="anonymous" />
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Lora', serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      text-align: right;
+      padding: 1em;
+      background-color: #f4f4f4;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+      .container {
+    flex: 1;
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 0 1em;
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+    gap: 2em;
+    align-items: flex-start;
+  }
+
+  .container img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0; /* prevent it from shrinking */
+  }
+
+  .text-section {
+    flex: 1;
+    min-width: 250px;
+  }
+      footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #f4f4f4;
+      font-family: 'Lora', serif;
+    }
+
+    footer a {
+      margin: 0 10px;
+      font-size: 1.4em;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #0073e6;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/blog/' | relative_url }}">Blog</a>
+    <a href="{{ '/projects/' | relative_url }}">Projects</a>
+  </nav>
+
+  <div class="container">
+    {% unless page.title == "Blog" or page.title == "Projects" %}
+        <img src="{{ '/assets/images/prof_picture.jpg' | relative_url }}" alt="Profile Image">
+    {% endunless %}
+    <div class="text-section">
+      {{ content }}
+    </div>
+  </div>
+
+  {% include footer.html %}
+
+</body>
+</html>

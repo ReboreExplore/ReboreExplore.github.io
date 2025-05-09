@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="{{ site.fontawesome.integrity }}" crossorigin="anonymous" />
+  
+  <style>
+    body {
+      font-family: 'Lora', serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .blog-post-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 2em;
+      padding: 1em;
+      background-color: white;
+      border-radius: 10px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .blog-post {
+      max-width: 600px;
+      padding: 1em;
+    }
+
+    .blog-post img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1em;
+    }
+
+    .blog-post h1 {
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+
+    .blog-post p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .tags {
+      margin-top: 1em;
+      font-size: 1em;
+    }
+
+    .tags span {
+      display: inline-block;
+      background-color: #0073e6;
+      color: white;
+      padding: 0.4em 0.6em;
+      margin: 0.3em;
+      border-radius: 5px;
+    }
+
+    .tags span:hover {
+      background-color: #005bb5;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="blog-post-container">
+    <div class="blog-post">
+      <h1>{{ page.title }}</h1>
+      <p><em>{{ page.date | date: "%B %d, %Y" }}</em></p>
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+      {{ content }}
+
+      <!-- Tags Section -->
+      {% if page.tags %}
+        <div class="tags">
+          <h4>Tags:</h4>
+          {% for tag in page.tags %}
+            <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</body>
+</html>

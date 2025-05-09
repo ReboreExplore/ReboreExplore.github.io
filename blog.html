@@ -1,0 +1,118 @@
+---
+layout: default
+title: "Blog"
+---
+
+<h1>{{ page.title }}</h1>
+
+<!-- Tag Filters -->
+<div id="tag-filters">
+  {% assign all_tags = site.tags | sort %}
+  {% for tag in all_tags %}
+    <button class="tag-button" data-tag="{{ tag[0] }}">{{ tag[0] }}</button>
+  {% endfor %}
+</div>
+
+<!-- Blog Posts -->
+<div class="blog-list">
+  {% for post in site.posts %}
+    <div class="blog-item" data-tags="{{ post.tags | join: ',' }}">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p><em>{{ post.date | date: "%B %d, %Y" }}</em></p>
+
+      <div class="tags">
+        {% for tag in post.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+
+      <p>{{ post.excerpt }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+<!-- JavaScript for tag filtering -->
+<script>
+  const tagButtons = document.querySelectorAll('.tag-button');
+  const blogItems = document.querySelectorAll('.blog-item');
+  let selectedTags = new Set();
+
+  tagButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const tag = button.dataset.tag;
+      button.classList.toggle('active');
+
+      if (selectedTags.has(tag)) {
+        selectedTags.delete(tag);
+      } else {
+        selectedTags.add(tag);
+      }
+
+      filterPosts();
+    });
+  });
+
+  function filterPosts() {
+    if (selectedTags.size === 0) {
+      blogItems.forEach(item => item.style.display = 'block');
+      return;
+    }
+
+    blogItems.forEach(item => {
+      const itemTags = item.dataset.tags.split(',');
+      const match = Array.from(selectedTags).some(tag => itemTags.includes(tag));
+      item.style.display = match ? 'block' : 'none';
+    });
+  }
+</script>
+
+<!-- CSS -->
+<style>
+  #tag-filters {
+    margin: 1em 0;
+  }
+
+  .tag-button {
+    background-color: #eee;
+    border: none;
+    padding: 0.4em 0.8em;
+    margin: 0.2em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .tag-button.active {
+    background-color: #0073e6;
+    color: white;
+  }
+
+  .blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .blog-item {
+    background: #f9f9f9;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .blog-item h2 a {
+    text-decoration: none;
+    color: #0073e6;
+  }
+
+  .tags .tag {
+    display: inline-block;
+    background: #0073e6;
+    color: white;
+    padding: 0.2em 0.5em;
+    margin: 0.2em;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+</style>
+
+  

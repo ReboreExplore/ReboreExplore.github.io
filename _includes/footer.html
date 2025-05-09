@@ -1,0 +1,20 @@
+<footer style="text-align: center; margin-top: 4em; padding: 2em 1em; background-color: #f4f4f4; font-family: 'Lora', serif;">
+    <p>Connect with me:</p>
+    <div style="font-size: 1.5em;">
+      {% if site.github_username %}
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" style="margin: 0 10px;"><i class="fab fa-github"></i></a>
+      {% endif %}
+      {% if site.twitter_username %}
+        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" style="margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+      {% endif %}
+      {% if site.linkedin_username %}
+        <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" style="margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+      {% endif %}
+      {% if site.medium_username %}
+        <a href="https://medium.com/@{{ site.medium_username }}" target="_blank" style="margin: 0 10px;"><i class="fab fa-medium"></i></a>
+      {% endif %}
+      {% if site.scholar_userid %}
+        <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" style="margin: 0 10px;"><i class="ai ai-google-scholar"></i></a>
+      {% endif %}
+    </div>
+  </footer>

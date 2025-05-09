@@ -1,0 +1,90 @@
+---
+layout: default
+title: "Projects"
+---
+
+<h1>{{ page.title }}</h1>
+
+<div class="project-list">
+  {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+  {% for project in sorted_projects %}
+    <div class="project-card">
+      <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
+
+      {% if project.tags %}
+        <div class="tags">
+          {% for tag in project.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <p>{{ project.excerpt | strip_html | truncatewords: 20 }}</p>
+
+      <!-- Removed Code and Paper Links -->
+      <ul class="project-links">
+        {% if project.link_demo %}
+          <li><a href="{{ project.link_demo }}" target="_blank">🔗 Live demo</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 1em;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.project-card h2 {
+  margin-bottom: 0.3em;
+}
+
+.project-card h2 a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.tags {
+  margin-bottom: 0.8em;
+}
+
+.tag {
+  background: #0073e6;
+  color: white;
+  padding: 0.3em 0.6em;
+  margin-right: 0.4em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+.project-links {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1em;
+}
+
+.project-links li {
+  margin-bottom: 0.3em;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: 500;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+</style>
