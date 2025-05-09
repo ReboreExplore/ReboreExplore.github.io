@@ -48,7 +48,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:title/
-
+  news:
+    output: true
+    permalink: /news/:name/
 
 contact_note: >
   The most convenient way to reach me is email. I make sure I reply to almost all of them.
