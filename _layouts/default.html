@@ -86,7 +86,7 @@
   </nav>
 
   <div class="container">
-    {% unless page.title == "Blog" or page.title == "Projects" %}
+    {% unless page.title == "Blog" or page.title == "Projects" or page.collection == "news" %}
         <img src="{{ '/assets/images/prof_picture.jpg' | relative_url }}" alt="Profile Image">
     {% endunless %}
     <div class="text-section">
