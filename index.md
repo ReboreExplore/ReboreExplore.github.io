@@ -44,7 +44,7 @@ View my my work so far in my Curriculum Vitae - [CV_April2025]({{ site.baseurl }
 <div class="now-catchy-box">
   <ul>
     <li>🚀 Completed 3/12 books (fiction) as part of my year goal (Will write a quarterly review blog)</li>
-    <li>🎶 Joined Balfolk class as a new way of dealing with stress</li>
+    <li>🎶 Joined Balfolk and Zumba classes to dance the stress away after work! </li>
     <li>✍️ Drafting a blog on Image Operations </li>
   </ul>
 </div>
