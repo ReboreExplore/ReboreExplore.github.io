@@ -1,0 +1,8 @@
+---
+topic : "Started my Masters Thesis with Insitute of Signals and Systems, University of Stuttgart and Mercedes-Benz Research and Development"
+date: 2025-10-15
+layout: news_posts
+---
+I started my Masters Thesis with Insitute of Signals and Systems, University of Stuttgart and Mercedes-Benz Research and Development under the supervision of Felix Embacher, Dr-Ing. Jonas Uhrig and Prof. Dr-Ing Bin Yang. 
+
+Abstract : Autonomous driving (AD) systems struggle with rare and long-tail object perception due to limited training data, high intra-class variability, and small spatial occupancy. Mechanisms that help identify and analyze such rare instances in large-scale driving datasets are necessary for AD systems. In this thesis, an object retrieval framework for large-scale rare-object search is presented and evaluated on the Object-Centric SearchAD driving dataset. The framework consists of a coupled image retrieval stage and a localization stage. In the retrieval stage, fine-tuning and feature aggregation strategies are employed to obtain robust retrieval representations, and for the localization stage, a lightweight transformer-based detection head is designed and trained to enable efficient localization of queried objects using precomputed retrieval features. Additionally, system-level object retrieval metrics are introduced to evaluate the end-to-end object retrieval accuracy of the framework. The proposed framework enables efficient large-scale search with accurate localization, providing a practical solution for rare object and long-tail perception in AD.

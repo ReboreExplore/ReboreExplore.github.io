@@ -9,18 +9,18 @@ profile:
   image: prof_picture.jpg
 ---
 
-hi, welcome to my portfolio page. This is a space for both my professional and hobby projects.
+hi, welcome to my portfolio page. 
 
-I'm Manpa Barman, Grad Student @Universität Stuttgart. I am pursuing my masters in Information Technology with a focus in deep learning and embedded systems. Of late I am exploring the field of AI and software engineering but yet to figure out my niche. Currently, I am searching 🔍 for a master thesis in the field of foundational deep learning and computer vision.
+I'm Manpa Barman, Grad Student @Universität Stuttgart. I am completing my masters in Information Technology and currently looking for PhD opportunities in AI / Computer Vision, focusing on multimodal and representation learning (vision-language systems).
 
 ### Beyond academics 🏃‍♀️ 
 
-I'm an artist at heart. Music, especially Indian classical. I am currently learning music theory and play some ukelele on the go. 
+I'm an artist at heart. Music, especially Indian classical. I occasionally play the ukelele and like to vibe and groove on Zumba beats. I also enjoy reading fiction. The last book I read last month was "Animal Farm" by George Orwell.
 
-For my long term aspiration of science journalism, I've embarked on a personal journey of self-expression through writing. I've been chronicling my life and experiences on Medium so far, however have been a bit inconsistent oweing to the busy schedule of a grad student. I plan to do more technical blogs in the future.
+For my long term aspiration of science communication, and currently I am working on improving my writing, teaching and public speaking skills. I have been writing blogs on my Medium on pretty much random topics, but I am currently trying to be more formal and focused on my research area. I like to watch Physics Girl, Veritasium, Computerphile and recently Julia Turc on on YouTube for science communication inspiration.
 
 
-View my my work so far in my Curriculum Vitae - [CV_April2025]({{ site.baseurl }}/assets/pdf/my_cv.pdf)
+View my my work so far in my Curriculum Vitae - [CV_April2025]({{ site.baseurl }}/assets/pdf/manpa_resume_2026_Apr.pdfpdf)
 
 
 ## 🗞️ Latest News
@@ -44,7 +44,7 @@ View my my work so far in my Curriculum Vitae - [CV_April2025]({{ site.baseurl }
 <div class="now-catchy-box">
   <ul>
     <li>🚀 Completed 3/12 books (fiction) as part of my year goal (Will write a quarterly review blog)</li>
-    <li>🎶 Joined Balfolk and Zumba classes to dance the stress away after work! </li>
-    <li>✍️ Drafting a blog on Image Operations </li>
+    <li>🎶 Vibing to Zumba beats to dance the stress away after work and picking up running as a new hobby </li>
+    <li>✍️ Preparing for my master thesis defense presentation
   </ul>
 </div>
