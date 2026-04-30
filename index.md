@@ -20,7 +20,7 @@ I'm an artist at heart. Music, especially Indian classical. I occasionally play 
 For my long term aspiration of science communication, and currently I am working on improving my writing, teaching and public speaking skills. I have been writing blogs on my Medium on pretty much random topics, but I am currently trying to be more formal and focused on my research area. I like to watch Physics Girl, Veritasium, Computerphile and recently Julia Turc on on YouTube for science communication inspiration.
 
 
-View my my work so far in my Curriculum Vitae - [CV_April2025]({{ site.baseurl }}/assets/pdf/manpa_resume_2026_Apr.pdfpdf)
+View my my work so far in my Curriculum Vitae - [CV_April2025]({{ site.baseurl }}/assets/pdf/manpa_resume_2026_Apr.pdf)
 
 
 ## 🗞️ Latest News
