@@ -1,0 +1,57 @@
+---
+layout: default
+title: "Publications"
+permalink: /publications/
+description: Peer-reviewed papers, preprints and reports by Manpa Barman.
+---
+
+<p class="page-subtitle">Peer-reviewed papers, preprints and reports, newest first.</p>
+
+<ul class="pub-list-full">
+  {% assign pubs = site.publications | sort: "sort_key" | reverse %}
+  {% for pub in pubs %}
+    <li class="pub-entry">
+      <div class="pub-thumb">
+        {% if pub.image %}
+          <img src="{{ pub.image | relative_url }}" alt="Figure from {{ pub.title }}">
+        {% else %}
+          <div class="pub-thumb-placeholder" aria-hidden="true">📄</div>
+        {% endif %}
+      </div>
+      <div class="pub-content">
+        {% if pub.affiliations %}
+          <div class="pub-context">
+            {% for aff in pub.affiliations %}<span class="pub-context-tag">{{ aff }}</span>{% endfor %}
+          </div>
+        {% endif %}
+        {% if pub.status %}<span class="pub-status">{{ pub.status }}</span>{% endif %}
+        <h3 class="pub-title">
+          {% assign primary_link = pub.links.pdf | default: pub.links.doi | default: pub.links.arxiv | default: pub.links.code %}
+          {% if primary_link %}<a href="{{ primary_link }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
+        </h3>
+        <p class="pub-authors">{{ pub.authors }}</p>
+        <p class="pub-venue">{{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}</p>
+        {% if pub.note %}<p class="pub-note">{{ pub.note }}</p>{% endif %}
+        {% if pub.links.pdf or pub.links.doi or pub.links.arxiv or pub.links.code %}
+          <div class="pub-links">
+            {% if pub.links.pdf %}<a class="btn-outline" href="{{ pub.links.pdf }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+            {% if pub.links.doi %}<a class="btn-outline" href="{{ pub.links.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+            {% if pub.links.arxiv %}<a class="btn-outline" href="{{ pub.links.arxiv }}" target="_blank" rel="noopener">arXiv</a>{% endif %}
+            {% if pub.links.code %}<a class="btn-outline" href="{{ pub.links.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+          </div>
+        {% endif %}
+        {% if pub.keywords %}
+          <div class="tags pub-keywords">
+            {% for kw in pub.keywords %}<span class="tag">{{ kw }}</span>{% endfor %}
+          </div>
+        {% endif %}
+        {% if pub.description %}
+          <details class="pub-details">
+            <summary>Project details</summary>
+            <div class="pub-description">{{ pub.description | markdownify }}</div>
+          </details>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>

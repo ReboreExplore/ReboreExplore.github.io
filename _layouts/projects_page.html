@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% include head.html %}
 </head>
 <body>
+  {% include nav.html %}
+
   <main class="project-page">
     <h1>{{ page.title }}</h1>
 
     {% if page.date %}
-      <p><em>{{ page.date | date: "%B %d, %Y" }}</em></p>
+      <p class="meta"><em>{{ page.date | date: "%B %d, %Y" }}</em></p>
     {% endif %}
 
     {% if page.tags %}
@@ -27,12 +27,17 @@
 
     <div class="project-links">
       {% if page.link_code %}
-        <p><a href="{{ page.link_code }}" target="_blank">🔗 View Code</a></p>
+        <a href="{{ page.link_code }}" target="_blank" rel="noopener">🔗 View Code</a>
       {% endif %}
       {% if page.link_paper %}
-        <p><a href="{{ page.link_paper }}" target="_blank">📄 Read Paper</a></p>
+        <a href="{{ page.link_paper }}" target="_blank" rel="noopener">📄 Read Paper</a>
+      {% endif %}
+      {% if page.link_demo %}
+        <a href="{{ page.link_demo }}" target="_blank" rel="noopener">🚀 Live Demo</a>
       {% endif %}
     </div>
+
+    <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to Projects</a>
   </main>
 
   {% include footer.html %}

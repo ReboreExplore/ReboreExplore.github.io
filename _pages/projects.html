@@ -2,15 +2,19 @@
 layout: default
 title: "Projects"
 permalink: /projects/
+published: false
+# Off the live site for now — the only project without a matching publication
+# (CHATtacker) isn't enough on its own to justify the page. Flip published
+# back to true (and set the `projects` collection's `output` back to true in
+# _config.yml) once there's a real bench of non-paper projects to show.
 ---
 
-<h1>{{ page.title }}</h1>
-
-<div class="project-list">
+<div class="card-list">
   {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
   {% for project in sorted_projects %}
-    <div class="project-card">
+    <div class="card">
       <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
+      <p class="meta">{{ project.date | date: "%B %Y" }}</p>
 
       {% if project.tags %}
         <div class="tags">
@@ -20,73 +24,19 @@ permalink: /projects/
         </div>
       {% endif %}
 
-      <p>{{ project.excerpt | strip_html | truncatewords: 20 }}</p>
+      <p class="excerpt">{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
 
-      <!-- Removed Code and Paper Links -->
-      <ul class="project-links">
+      <ul class="card-links">
+        {% if project.link_code %}
+          <li><a href="{{ project.link_code }}" target="_blank" rel="noopener">🔗 Code</a></li>
+        {% endif %}
+        {% if project.link_paper %}
+          <li><a href="{{ project.link_paper }}" target="_blank" rel="noopener">📄 Paper</a></li>
+        {% endif %}
         {% if project.link_demo %}
-          <li><a href="{{ project.link_demo }}" target="_blank">🔗 Live demo</a></li>
+          <li><a href="{{ project.link_demo }}" target="_blank" rel="noopener">🚀 Live demo</a></li>
         {% endif %}
       </ul>
     </div>
   {% endfor %}
-  <a href="{{ site.baseurl }}/" class="back-link">Back to Home</a>
 </div>
-
-<style>
-.project-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  margin-top: 1em;
-}
-
-.project-card {
-  background: #fff;
-  padding: 1.5em;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.project-card h2 {
-  margin-bottom: 0.3em;
-}
-
-.project-card h2 a {
-  color: #0073e6;
-  text-decoration: none;
-}
-
-.tags {
-  margin-bottom: 0.8em;
-}
-
-.tag {
-  background: #0073e6;
-  color: white;
-  padding: 0.3em 0.6em;
-  margin-right: 0.4em;
-  border-radius: 4px;
-  font-size: 0.85em;
-}
-
-.project-links {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 1em;
-}
-
-.project-links li {
-  margin-bottom: 0.3em;
-}
-
-.project-links a {
-  text-decoration: none;
-  color: #0056b3;
-  font-weight: 500;
-}
-
-.project-links a:hover {
-  text-decoration: underline;
-}
-</style>

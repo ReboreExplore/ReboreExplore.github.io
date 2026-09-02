@@ -1,0 +1,67 @@
+---
+layout: default
+title: "Random"
+permalink: /random/
+description: Unfiltered notes on work, life and research.
+---
+
+<p class="page-subtitle">Half-formed thoughts on work, life and research — dated, unpolished, dumped here as they happen.</p>
+
+<p class="thought-disclaimer">These thoughts are my own — unedited and AI-immune. If something here resonates or you've thought about it too, I'd love to hear from you: <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+
+<div id="thought-filters">
+  {% assign all_categories = site.thoughts | map: "category" | uniq | sort %}
+  {% for cat in all_categories %}
+    <button class="tag-button" data-category="{{ cat }}">{{ cat }}</button>
+  {% endfor %}
+</div>
+
+<div class="thought-list">
+  {% assign thoughts = site.thoughts | sort: "date" | reverse %}
+  {% for thought in thoughts %}
+    <div class="thought-entry" data-category="{{ thought.category }}">
+      <div class="thought-meta">
+        <time>{{ thought.date | date: "%B %d, %Y" }}</time>
+        {% if thought.category %}<span class="tag">{{ thought.category }}</span>{% endif %}
+      </div>
+      {% if thought.title %}<h3 class="thought-title">{{ thought.title }}</h3>{% endif %}
+      <p class="thought-excerpt">{{ thought.content | strip_html | truncatewords: 25 }}</p>
+      <details class="thought-details">
+        <summary>Read more</summary>
+        <div class="thought-body">{{ thought.content }}</div>
+      </details>
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+  const filterButtons = document.querySelectorAll('#thought-filters .tag-button');
+  const entries = document.querySelectorAll('.thought-entry');
+  let selectedCategories = new Set();
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const category = button.dataset.category;
+      button.classList.toggle('active');
+
+      if (selectedCategories.has(category)) {
+        selectedCategories.delete(category);
+      } else {
+        selectedCategories.add(category);
+      }
+
+      filterEntries();
+    });
+  });
+
+  function filterEntries() {
+    if (selectedCategories.size === 0) {
+      entries.forEach(entry => entry.style.display = 'block');
+      return;
+    }
+
+    entries.forEach(entry => {
+      entry.style.display = selectedCategories.has(entry.dataset.category) ? 'block' : 'none';
+    });
+  }
+</script>
