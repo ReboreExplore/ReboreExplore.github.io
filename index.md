@@ -6,7 +6,7 @@ description: Grad Student @ University of Stuttgart
 
 profile:
   align: right
-  image: prof_picture.jpg
+  image: prof_picture.png
 ---
 
 hi, welcome to my portfolio page.
